@@ -1,0 +1,139 @@
+@keyframes gradientBackground {0% {
+    background-position: 0% 50%;
+}
+
+50% {
+    background-position: 100% 50%;
+}
+
+100% {
+    background-position: 0% 50%;
+}
+}
+
+body {
+font-family: 'Roboto', Arial, sans-serif;
+margin: 0;
+padding: 0;
+background: linear-gradient(45deg, #0d0d0d, #1a1a1a, #3245dc, #018786);
+background-size: 400% 400%;
+animation: gradientBackground 15s ease infinite;
+color: #e0e0e0;
+}
+
+header {
+background-color: rgba(26, 26, 26, 0.95);
+color: #3245dc;
+padding: 1.5rem;
+text-align: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+display: flex;
+justify-content: center;
+background-color: rgba(18, 18, 18, 0.95);
+padding: 1rem 0;
+}
+
+nav a {
+color: #e0e0e0;
+text-decoration: none;
+margin: 0 15px;
+padding: 10px 20px;
+font-weight: bold;
+border: 1px solid transparent;
+transition: all 0.3s ease;
+}
+
+nav a:hover {
+background-color: #3245dc;
+color: #0d0d0d;
+border-radius: 5px;
+}
+
+.hero {
+text-align: center;
+padding: 3rem 2rem;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+color: #3245dc;
+background-blend-mode: overlay;
+}
+
+.hero h1 {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+
+.hero p {
+font-size: 1.2rem;
+margin-bottom: 2rem;
+}
+
+.btn-primary {
+background-color: #3245dc;
+color: #0d0d0d;
+padding: 1rem 2rem;
+border: none;
+border-radius: 5px;
+text-transform: uppercase;
+font-weight: bold;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+background-color: #018786;
+}
+
+.content {
+padding: 2rem;
+background-color: rgba(26, 26, 26, 0.9);
+margin: 2rem auto;
+max-width: 1200px;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.content h2 {
+text-align: center;
+margin-bottom: 1.5rem;
+color: #3245dc;
+}
+
+.products {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 1.5rem;
+}
+
+.product {
+background-color: rgba(18, 18, 18, 0.95);
+border-radius: 10px;
+padding: 1.5rem;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.product img {
+max-width: 100%;
+border-radius: 10px;
+margin-bottom: 1rem;
+}
+
+footer {
+background-color: rgba(13, 13, 13, 0.95);
+color: #3245dc;
+text-align: center;
+padding: 1rem;
+margin-top: 2rem;
+font-size: 0.9rem;
+}
